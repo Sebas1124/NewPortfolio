@@ -1,13 +1,20 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+
+import React from "../assets/img/react.png";
+import NextLogo from "../assets/img/NextLogo.png";
+import TSJS from "../assets/img/TSJS.png";
+import RN from "../assets/img/RN.png";
+import Nodejs from "../assets/img/nodejs.png";
+import PHP from "../assets/img/php.png";
+import Laravel from "../assets/img/laravel.png";
+import Socketio from "../assets/img/socketio.svg";
+import MongoDB from "../assets/img/mongodb.svg";
+import MySql from "../assets/img/mysql.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -34,24 +41,52 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <h2>Habilidades</h2>
+                        <p>Conocimientos Adquiridos durante mi experiencia Laboral<br></br>Tecnólogo en Analisis y desarrollo en sistemas de la información.</p>
+                        <Carousel 
+                         responsive={ responsive } 
+                         infinite={true} 
+                         className="owl-carousel owl-theme skill-slider">
+
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={ React } alt="Image" />
+                                <h5>ReactJS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <img src={ RN } alt="Image" />
+                                <h5>React Native</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <img src={ NextLogo } alt="Image" />
+                                <h5>Next JS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={ TSJS } alt="Image" />
+                                <h5>JavaScript / TypeScript</h5>
+                            </div>
+                            <div className="item">
+                                <img src={ Nodejs } alt="Image" />
+                                <h5>NodeJS</h5>
+                            </div>
+                            <div className="item">
+                                <img src={ PHP } alt="Image" />
+                                <h5>PhP</h5>
+                            </div>
+                            <div className="item">
+                                <img src={ Laravel } alt="Image" />
+                                <h5>Laravel</h5>
+                            </div>
+                            <div className="item">
+                                <img src={ Socketio } alt="Image" />
+                                <h5>Socket.IO</h5>
+                            </div>
+                            <div className="item">
+                                <img src={ MongoDB } alt="Image" />
+                                <h5>MongoDB</h5>
+                            </div>
+                            <div className="item">
+                                <img src={ MySql } alt="Image" />
+                                <h5>MySQl</h5>
                             </div>
                         </Carousel>
                     </div>

@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-// import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+
+import CV from '../assets/pdf/curriculum_De_Sebastian_Rosero_López.pdf';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -11,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ " Web Developer", " Movil Developer", " FullStack" ];
+  const toRotate = [ " Web Developer", " Mobil Developer", " FullStack" ];
   const period = 2000;
 
   useEffect(() => {
@@ -59,13 +60,17 @@ export const Banner = () => {
                     <span className="tagline">Bienvenido a mi Portafolio</span>
                     <h1>
                         {`Hola, Soy Sebastián`}
-                        <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Movil Developer", "FullStack" ]'>
+                        <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Mobil Developer", "FullStack" ]'>
                         <span className="wrap">{ text }
                         </span></span>
                     </h1>
                     <p>Hola, Bienvenido a mi portafolio, Soy Sebastian Rosero, Desarrollador de software FullStack, Mira todos mis proyectos y experiencia en cuanto al desarrollo de software, Just Be Fun :)!</p>
-                    <button 
-                    onClick={() => console.log('connect')}>Contactame <ArrowRightCircle size={25} /></button>
+                    <a style={{ textDecoration: 'none' }} href={ CV } target="_blank" download="curriculum_De_Sebastian_Rosero_López.pdf"> 
+                        <button
+                        onClick={() => console.log('connect')}>Descarga mi CV <ArrowRightCircle size={25} />
+                            
+                        </button>
+                    </a>
                 </div>
               }
             </TrackVisibility>
