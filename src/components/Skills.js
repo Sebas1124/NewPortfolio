@@ -1,4 +1,3 @@
-
 import React from "../assets/img/react.png";
 import NextLogo from "../assets/img/NextLogo.png";
 import TSJS from "../assets/img/TSJS.png";
@@ -9,6 +8,7 @@ import Laravel from "../assets/img/laravel.png";
 import Socketio from "../assets/img/socketio.svg";
 import MongoDB from "../assets/img/mongodb.svg";
 import MySql from "../assets/img/mysql.svg";
+import github from "../assets/img/github.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
@@ -36,7 +36,7 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className="skill" id="Habilidades">
         <div className="container">
             <div className="row">
                 <div className="col-12">
@@ -47,53 +47,78 @@ export const Skills = () => {
                          responsive={ responsive } 
                          infinite={true} 
                          className="owl-carousel owl-theme skill-slider">
-
                             <div className="item">
-                                <img src={ React } alt="Image" />
+                                <div>
+                                    <img src={ React } alt="ReactJS" />
+                                </div>
                                 <h5>ReactJS</h5>
                             </div>
                             <div className="item">
-                                <img src={ RN } alt="Image" />
+                                <div>
+                                    <img src={ RN } alt="React Native" />
+                                </div>
                                 <h5>React Native</h5>
                             </div>
                             <div className="item">
-                                <img src={ NextLogo } alt="Image" />
+                                <div>
+                                    <img src={ NextLogo } alt="Next JS" />
+                                </div>
                                 <h5>Next JS</h5>
                             </div>
                             <div className="item">
-                                <img src={ TSJS } alt="Image" />
+                                <div>
+                                    <img src={ TSJS } alt="JavaScript/TypeScript" />
+                                </div>
                                 <h5>JavaScript / TypeScript</h5>
                             </div>
                             <div className="item">
-                                <img src={ Nodejs } alt="Image" />
+                                <div>
+                                    <img src={ Nodejs } alt="Nodejs" />
+                                </div>
                                 <h5>NodeJS</h5>
                             </div>
                             <div className="item">
-                                <img src={ PHP } alt="Image" />
+                                <div>
+                                    <img src={ PHP } alt="Php" />
+                                </div>
                                 <h5>PhP</h5>
                             </div>
                             <div className="item">
-                                <img src={ Laravel } alt="Image" />
+                                <div>
+                                    <img src={ Laravel } alt="Laravel" />
+                                </div>
                                 <h5>Laravel</h5>
                             </div>
                             <div className="item">
-                                <img src={ Socketio } alt="Image" />
+                                <div>
+                                    <img src={ Socketio } alt="Sockets" />
+                                </div>
                                 <h5>Socket.IO</h5>
                             </div>
                             <div className="item">
-                                <img src={ MongoDB } alt="Image" />
+                                <div>
+                                    <img src={ MongoDB } alt="MongoDB" />
+                                </div>
                                 <h5>MongoDB</h5>
                             </div>
                             <div className="item">
-                                <img src={ MySql } alt="Image" />
+                                <div>
+                                    <img src={ MySql } alt="MySQl" />
+                                </div>
                                 <h5>MySQl</h5>
+                            </div>
+                            <div className="item">
+                                <div>
+                                    <img src={ github } alt="Git/GitHub" />
+                                </div>
+                                <h5>Git | GitHub</h5>
                             </div>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={ colorSharp } alt="Bg" />
     </section>
   )
 }
