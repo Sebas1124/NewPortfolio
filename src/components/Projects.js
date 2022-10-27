@@ -86,13 +86,13 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Desarrollo Web</Nav.Link>
+                      <Nav.Link eventKey="first">Web</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Desarrollo Movil</Nav.Link>
+                      <Nav.Link eventKey="second">Movil</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Acerca de mi</Nav.Link>
+                      <Nav.Link eventKey="third">Skills</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -125,7 +125,7 @@ export const Projects = () => {
                       </Row>
                       </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <ul style={{ listStyle: 'revert-layer', display: 'flex', flexDirection: 'column', justifyContent:'center', alignItems: 'center' }}>
+                      <ul style={{ display: 'flex', flexDirection: 'column', justifyContent:'center' }}>
                         <li>
                           <h5>
                             Aprendizaje Rapido y adaptativo

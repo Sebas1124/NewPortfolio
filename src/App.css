@@ -175,6 +175,11 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+
+.LogoNavbar{
+  
+}
+
 .navbar-text button:hover {
   color: #121212;
 }
@@ -403,7 +408,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 17px 0;
   color: #fff;
   width: 100%;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
@@ -583,6 +588,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 80px;
   margin-top: -122px;
 }
+
+.newsletter-bx .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+
 .newsletter-bx h3 {
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -635,6 +649,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
+
+@media (max-width:760px){
+  .new-email-bx button{
+    width: 100px;
+    padding: .8rem 1rem .8rem;
+  }
+  .LogoNavbar {
+    width: 90px;
+  }
+}
+@media (max-width:440px){
+  .new-email-bx button{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100px;
+    padding: .8rem 1rem .8rem;
+  }
+  .LogoNavbar{
+    width: 80px;
+  }
+}
+
 .footer img {
   width: 26%;
 }
