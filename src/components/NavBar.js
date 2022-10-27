@@ -34,7 +34,6 @@ export const NavBar = () => {
     
 
   return (
-    <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
@@ -48,6 +47,7 @@ export const NavBar = () => {
               <Nav.Link href="/#Inicio" className={ activeLink === 'Inicio' ? 'active navbar-link' : 'navbar-link' } onClick={ () => onUpdateActiveLink('Inicio') }>Inicio</Nav.Link>
               <Nav.Link href="/#Habilidades" className={ activeLink === 'Habilidades' ? 'active navbar-link' : 'navbar-link' } onClick={ () => onUpdateActiveLink('Habilidades') }>Habilidades</Nav.Link>
               <Nav.Link href="/#Proyectos" className={ activeLink === 'Proyectos' ? 'active navbar-link' : 'navbar-link' } onClick={ () => onUpdateActiveLink('Proyectos') }>Proyectos</Nav.Link>
+              <Nav.Link href="/privacy-policy" className={ activeLink === 'Private' ? 'active navbar-link' : 'navbar-link' } onClick={ () => onUpdateActiveLink('Private') }>Privacidad</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -55,14 +55,13 @@ export const NavBar = () => {
                 <a target='_blank' rel='noreferrer' href="https://www.facebook.com/Sebastian11YT"><img src={ navIcon2 } alt="Social Icon" /></a>
                 <a target='_blank' rel='noreferrer' href="https://www.instagram.com/sebastian_roserolopez11/?hl=es"><img src={ navIcon3 } alt="Social Icon" /></a>
               </div>
-              <HashLink to='#connect'>
+              <HashLink to='/#connect'>
                 <button className="vvd"><span>Contactame</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Router>
   );
 }
 

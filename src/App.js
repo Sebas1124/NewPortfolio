@@ -7,17 +7,22 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { MainIndex } from './components/Main/MainIndex';
+import { Politics } from './components/Private/Politics';
 
 
 export const App = () => {
   return (
-    <div className='App'>
-      <NavBar/>
-      <Banner/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className='App'>
+        <NavBar/>
+          <Routes>
+            <Route path='/' element={ <MainIndex/> } />
+            <Route path='/privacy-policy' element={ <Politics/> } />
+          </Routes>
+        <Footer/>
+      </div>
+    </Router>
   )
 }
