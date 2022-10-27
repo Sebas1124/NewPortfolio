@@ -8,6 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
 
@@ -47,7 +48,7 @@ export const NavBar = () => {
               <Nav.Link href="/#Inicio" className={ activeLink === 'Inicio' ? 'active navbar-link' : 'navbar-link' } onClick={ () => onUpdateActiveLink('Inicio') }>Inicio</Nav.Link>
               <Nav.Link href="/#Habilidades" className={ activeLink === 'Habilidades' ? 'active navbar-link' : 'navbar-link' } onClick={ () => onUpdateActiveLink('Habilidades') }>Habilidades</Nav.Link>
               <Nav.Link href="/#Proyectos" className={ activeLink === 'Proyectos' ? 'active navbar-link' : 'navbar-link' } onClick={ () => onUpdateActiveLink('Proyectos') }>Proyectos</Nav.Link>
-              <Nav.Link href="/privacy-policy" className={ activeLink === 'Private' ? 'active navbar-link' : 'navbar-link' } onClick={ () => onUpdateActiveLink('Private') }>Privacidad</Nav.Link>
+              <Link style={{ textDecoration: 'none', color: '#fff', alignSelf: 'center', marginRight: 8 }} to="/privacy-policy" className={ activeLink === 'Private' ? 'active navbar-link' : 'navbar-link' } onClick={ () => onUpdateActiveLink('Private') }>Privacidad</Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
